@@ -1,0 +1,26 @@
+[
+    {
+        "img": "../assets/images/sarajevo.jpg",
+        "alt": "Sarajevo",
+        "name": "Sarajevo",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/sarajevo.jpg",
+        "alt": "Sarajevo",
+        "name": "Sarajevo",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/sarajevo.jpg",
+        "alt": "Sarajevo",
+        "name": "Sarajevo",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/sarajevo.jpg",
+        "alt": "Sarajevo",
+        "name": "Sarajevo",
+        "button": "View Destination"
+    }
+]
