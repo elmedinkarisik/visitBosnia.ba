@@ -3,8 +3,30 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 import { FaRegLightbulb } from "react-icons/fa"
+import { graphql, useStaticQuery } from "gatsby"
 
 const Testimonials = () => {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allFile(
+        filter: {
+          ext: { regex: "/(jpg)|(png)|(jpeg)/" }
+          name: { in: ["user", "user2"] }
+        }
+      ) {
+        edges {
+          node {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <TestimonialsContainer>
       <TopLine>Testimonials</TopLine>
@@ -12,18 +34,32 @@ const Testimonials = () => {
       <ContentWrapper>
         <ColumnOne>
           <Testimonial>
-            <IoMdCheckmarkCircleOutline />
+            <IoMdCheckmarkCircleOutline
+              css={`
+                color: #3fffa8;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+              `}
+            />
             <h3>Edin Džeko</h3>
             <p>Top je sve!</p>
           </Testimonial>
           <Testimonial>
-            <FaRegLightbulb />
+            <FaRegLightbulb
+              css={`
+                color: #f9b19b;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+              `}
+            />
             <h3>Džejla Ramović</h3>
             <p>Jao kako je divno!</p>
           </Testimonial>
         </ColumnOne>
         <ColumnTwo>
-          <Images />
+          {data.allFile.edges.map((image, key) => (
+            <Images key={key} fluid={image.node.childImageSharp.fluid} />
+          ))}
         </ColumnTwo>
       </ContentWrapper>
     </TestimonialsContainer>
@@ -63,7 +99,7 @@ const ContentWrapper = styled.div`
 `
 const ColumnOne = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 `
 const Testimonial = styled.div`
   padding-top: 1rem;
