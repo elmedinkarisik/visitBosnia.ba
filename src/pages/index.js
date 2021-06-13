@@ -1,7 +1,9 @@
 import * as React from "react"
+import Email from "../components/Email"
 import Jumbotron from "../components/Jumbotron"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Stats from "../components/Stats"
 import Testimonials from "../components/Testimonials"
 import Trips from "../components/Trips"
 
@@ -11,6 +13,8 @@ const IndexPage = () => (
     <Jumbotron />
     <Trips heading="Our Best Destinations" />
     <Testimonials />
+    <Stats />
+    <Email />
   </Layout>
 )
 
