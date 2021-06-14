@@ -1,9 +1,17 @@
 import React from "react"
+import { useState } from "react"
 import styled from "styled-components"
 import { Button } from "./Button"
 import Video from "../assets/videos/bosniatravel.mp4"
+import { Flight } from "./Flight"
 
 const Jumbotron = () => {
+  const [showModal, setShowModal] = useState(false)
+
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  }
+
   return (
     <JumbotronContainer>
       <JumbotronBackground>
@@ -20,9 +28,10 @@ const Jumbotron = () => {
         <JumbotronItems>
           <JumbotronH1>Amazing Destinations</JumbotronH1>
           <JumbotronP>Unbelievable</JumbotronP>
-          <Button primary="true" big="true" round="true" to="/trips">
+          <Button primary="true" big="true" round="true" onClick={openModal}>
             Travel Now
           </Button>
+          <Flight showModal={showModal} setShowModal={setShowModal} />
         </JumbotronItems>
       </JumbotronContent>
     </JumbotronContainer>

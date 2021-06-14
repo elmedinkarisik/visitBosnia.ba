@@ -1,11 +1,19 @@
 import * as React from "react"
+import { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
+import { Flight } from "./Flight"
 
 const Header = () => {
+  const [showModal, setShowModal] = useState(false)
+
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  }
+
   return (
     <Nav>
       <NavLink to="/">visitBosnia</NavLink>
@@ -18,9 +26,10 @@ const Header = () => {
         ))}
       </NavMenu>
       <NavButton>
-        <Button primary="true" round="true" to="/trips" big="true">
+        <Button primary="true" round="true" big="true" onClick={openModal}>
           Book a Flight
         </Button>
+        <Flight showModal={showModal} setShowModal={setShowModal} />
       </NavButton>
     </Nav>
   )
