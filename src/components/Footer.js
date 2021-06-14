@@ -12,19 +12,19 @@ const Footer = () => {
         </FooterDesc>
         <FooterLinkItems>
           <FooterLinkTitle>Contact Us</FooterLinkTitle>
-          <FooterLink to="/">Contact</FooterLink>
-          <FooterLink to="/">Support</FooterLink>
-          <FooterLink to="/">Destinations</FooterLink>
-          <FooterLink to="/">Sponsorships</FooterLink>
+          <FooterLink to="/dummypage">Contact</FooterLink>
+          <FooterLink to="/dummypage">Support</FooterLink>
+          <FooterLink to="/dummypage">Destinations</FooterLink>
+          <FooterLink to="/dummypage">Sponsorships</FooterLink>
         </FooterLinkItems>
       </FooterLinksWrapper>
       <FooterLinksWrapper>
         <FooterLinkItems>
           <FooterLinkTitle>Videos</FooterLinkTitle>
-          <FooterLink to="/">Submit Video</FooterLink>
-          <FooterLink to="/">Ambassadors</FooterLink>
-          <FooterLink to="/">Agency</FooterLink>
-          <FooterLink to="/">Influencer</FooterLink>
+          <FooterLink to="/dummypage">Submit Video</FooterLink>
+          <FooterLink to="/dummypage">Ambassadors</FooterLink>
+          <FooterLink to="/dummypage">Agency</FooterLink>
+          <FooterLink to="/dummypage">Influencer</FooterLink>
         </FooterLinkItems>
         <FooterLinkItems>
           <FooterLinkTitle>Social Media</FooterLinkTitle>
