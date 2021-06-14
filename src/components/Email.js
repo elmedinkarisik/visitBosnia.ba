@@ -11,7 +11,7 @@ const Email = ({ submitForm }) => {
   return (
     <EmailContainer>
       <EmailContent>
-        <h1>Get Accesss to Exclusive Offers!</h1>
+        <h1>Get Access to Exclusive Offers!</h1>
         <p>Sign up for our newsletter</p>
         <form action="#" onSubmit={handleSubmit}>
           <FormWrap>

@@ -26,8 +26,7 @@ const Jumbotron = () => {
       </JumbotronBackground>
       <JumbotronContent>
         <JumbotronItems>
-          <JumbotronH1>Amazing Destinations</JumbotronH1>
-          <JumbotronP>Unbelievable</JumbotronP>
+          <JumbotronH1>Come And See For Yourself!</JumbotronH1>
           <Button primary="true" big="true" round="true" onClick={openModal}>
             Travel Now
           </Button>
@@ -110,9 +109,4 @@ const JumbotronH1 = styled.h1`
   margin-bottom: 1.5rem;
   letter-spacing: 3px;
   padding: 0 1rem;
-`
-const JumbotronP = styled.p`
-  font-size: clamp(1rem, 3vw, 3rem);
-  margin-bottom: 2rem;
-  font-weight: 400;
 `
