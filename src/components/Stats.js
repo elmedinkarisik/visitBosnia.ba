@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   grid-gap: 10px;
 
   @media screen and (max-width: 500px) {
-    grid.template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 `
 
