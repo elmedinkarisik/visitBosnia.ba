@@ -45,14 +45,14 @@ const FooterContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: #000;
-  background: #fafafb;
+  background: #fcfcfc;
 `
 const FooterDesc = styled.div`
   padding: 0 2rem;
 
   h1 {
     margin-bottom: 3rem;
-    color: #f26a2e;
+    color: #077bf1;
   }
 
   @media screen and (max-width: 400px) {
@@ -88,7 +88,7 @@ const FooterLink = styled(Link)`
   color: #3d3d4e;
 
   &:hover {
-    color: #f26a2e;
+    color: #077bf1;
     transition: 0.3s ease-out;
   }
 `

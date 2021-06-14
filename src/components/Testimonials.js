@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
-import { IoMdCheckmarkCircleOutline } from "react-icons/io"
-import { FaRegLightbulb } from "react-icons/fa"
+import { BiBasketball } from "react-icons/bi"
+import { BiTennisBall } from "react-icons/bi"
 import { graphql, useStaticQuery } from "gatsby"
 
 const Testimonials = () => {
@@ -11,7 +11,7 @@ const Testimonials = () => {
       allFile(
         filter: {
           ext: { regex: "/(jpg)|(png)|(jpeg)/" }
-          name: { in: ["user", "user2"] }
+          name: { in: ["novakdjokovic", "michaeljordan"] }
         }
       ) {
         edges {
@@ -29,31 +29,42 @@ const Testimonials = () => {
 
   return (
     <TestimonialsContainer>
-      <TopLine>Testimonials</TopLine>
-      <Description>What People Are Saying</Description>
+      <TopLine>Reviews</TopLine>
+      <Description>
+        You might recognize some of our satisfied clients
+      </Description>
       <ContentWrapper>
         <ColumnOne>
           <Testimonial>
-            <IoMdCheckmarkCircleOutline
+            <BiBasketball
               css={`
-                color: #3fffa8;
+                color: orange;
                 font-size: 2rem;
                 margin-bottom: 1rem;
               `}
             />
-            <h3>Edin Džeko</h3>
-            <p>Top je sve!</p>
+            <h3>Michael Jordan</h3>
+            <p>
+              "I was amazed and stunned by the beautiful nature that Bosnia and
+              Herzegovina has to offer. I've traveled quite a lot in my life and
+              I have seen and experienced a lot of things, but this really was
+              something I've never felt nor seen before. Who would've known that
+              such a small country hides so many treasures within it."
+            </p>
           </Testimonial>
           <Testimonial>
-            <FaRegLightbulb
+            <BiTennisBall
               css={`
-                color: #f9b19b;
+                color: green;
                 font-size: 2rem;
                 margin-bottom: 1rem;
               `}
             />
-            <h3>Džejla Ramović</h3>
-            <p>Jao kako je divno!</p>
+            <h3>Novak Đoković</h3>
+            <p>
+              "I'm under so many impressions... If there is a Heaven on Earth,
+              it is here."
+            </p>
           </Testimonial>
         </ColumnOne>
         <ColumnTwo>
@@ -76,10 +87,14 @@ const TestimonialsContainer = styled.div`
   height: 100%;
 `
 const TopLine = styled.p`
-  color: #077bf1;
-  font-size: 1rem;
-  padding-left: 2rem;
-  margin-bottom: 0.75rem;
+  // color: #077bf1;
+  // font-size: 1rem;
+  // padding-left: 2rem;
+  // margin-bottom: 0.75rem;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  text-align: center;
+  margin-bottom: 5rem;
+  color: #000;
 `
 const Description = styled.p`
   text-align: start;
@@ -107,11 +122,12 @@ const Testimonial = styled.div`
 
   h3 {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-style: italic;
   }
 
   p {
+    font-size: 1.5rem;
     color: #3b3b3b;
   }
 `

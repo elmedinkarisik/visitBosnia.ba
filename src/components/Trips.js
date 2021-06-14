@@ -39,8 +39,19 @@ const Trips = ({ heading }) => {
           />
           <ProductInfo>
             <TextWrap>
-              <ImLocation />
-              <ProductTitle>{item.node.name}</ProductTitle>
+              <ImLocation
+                css={`
+                  color: red;
+                  font-size: 30px;
+                `}
+              />
+              <ProductTitle
+                css={`
+                  font-size: 20px;
+                `}
+              >
+                {item.node.name}
+              </ProductTitle>
             </TextWrap>
             <Button
               href={item.node.link}
@@ -49,7 +60,7 @@ const Trips = ({ heading }) => {
               round="true"
               css={`
                 position: absolute;
-                top: 420px;
+                top: 600px;
                 font-size: 14px;
               `}
             >
@@ -76,6 +87,7 @@ const ProductsContainer = styled.div`
   min-height: 100vh;
   padding: 5rem calc((100vh - 1900px) / 2);
   color: #fff;
+  background: #fcfcfc;
 `
 
 const ProductsHeading = styled.div`
@@ -104,7 +116,7 @@ const ProductWrapper = styled.div`
 const ProductCard = styled.div`
   line-height: 2;
   width: 100%;
-  height: 500px;
+  height: 700px;
   position: relative;
   border-radius: 10px;
   transition: 0.2s ease;
@@ -126,7 +138,7 @@ const ProductImg = styled(Img)`
 const ProductInfo = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 0 2rem;
 
   @media screen and (max-width: 280px) {
@@ -138,7 +150,7 @@ const TextWrap = styled.div`
   display: flex;
   align-items: center;
   position: absolute;
-  top: 375px;
+  top: 550px;
 `
 
 const ProductTitle = styled.div`
