@@ -91,7 +91,7 @@ const TopLine = styled.p`
   // font-size: 1rem;
   // padding-left: 2rem;
   // margin-bottom: 0.75rem;
-  font-size: clamp(1.2rem, 5vw, 3rem);
+  font-size: clamp(1rem, 5vw, 3rem);
   text-align: center;
   margin-bottom: 5rem;
   color: #000;

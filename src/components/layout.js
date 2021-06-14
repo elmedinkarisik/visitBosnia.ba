@@ -2,7 +2,7 @@ import * as React from "react"
 import Footer from "./Footer"
 import Header from "./Header"
 import { GlobalStyle } from "./styles/GlobalStyles"
-import favicon from "../assets/images/favicon.ico"
+import favicon from "../images/gatsby-icon.png"
 import Helmet from "react-helmet"
 
 const Layout = ({ children }) => {
