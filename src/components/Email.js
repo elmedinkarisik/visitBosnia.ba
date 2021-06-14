@@ -2,17 +2,28 @@ import React from "react"
 import styled from "styled-components"
 import EmailBg from "../assets/images/landscape.jpg"
 import { Button } from "./Button"
+import useForm from "./useForm"
+import validate from "./validateInfo"
 
-const Email = () => {
+const Email = ({ submitForm }) => {
+  const { handleChange, values, handleSubmit } = useForm(submitForm, validate)
+
   return (
     <EmailContainer>
       <EmailContent>
         <h1>Get Accesss to Exclusive Offers!</h1>
         <p>Sign up for our newsletter</p>
-        <form action="#">
+        <form action="#" onSubmit={handleSubmit}>
           <FormWrap>
             <label htmlFor="email">
-              <input type="email" placeholder="Enter your email" id="email" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                id="email"
+                value={values.email}
+                onChange={handleChange}
+              />
             </label>
             <Button
               as="button"
