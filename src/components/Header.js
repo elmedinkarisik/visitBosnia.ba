@@ -8,7 +8,7 @@ import { Button } from "./Button"
 const Header = () => {
   return (
     <Nav>
-      <NavLink to="/">visit Bosnia</NavLink>
+      <NavLink to="/">visitBosnia</NavLink>
       <Bars />
       <NavMenu>
         {menuData.map((item, index) => (
@@ -18,7 +18,7 @@ const Header = () => {
         ))}
       </NavMenu>
       <NavButton>
-        <Button primary="true" round="true" to="/trips">
+        <Button primary="true" round="true" to="/trips" big="true">
           Book a Flight
         </Button>
       </NavButton>
@@ -36,6 +36,7 @@ const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1900px) / 2);
   z-index: 100;
   position: relative;
+  font-size: 20px;
 `
 
 const NavLink = styled(Link)`

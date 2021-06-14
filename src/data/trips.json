@@ -1,26 +1,30 @@
 [
     {
-        "img": "../assets/images/sarajevo.jpg",
-        "alt": "Sarajevo",
-        "name": "Sarajevo",
+        "img": "../assets/images/sebilj.jpg",
+        "alt": "Baščaršija, Sarajevo",
+        "link": "https://goo.gl/maps/BQZg3RbLEsvwC87r5",
+        "name": "Baščaršija, Sarajevo",
         "button": "View Destination"
     },
     {
-        "img": "../assets/images/sarajevo.jpg",
-        "alt": "Sarajevo",
-        "name": "Sarajevo",
+        "img": "../assets/images/starimost.jpg",
+        "alt": "Old Bridge, Mostar",
+        "link": "https://goo.gl/maps/Vfze2ib8tbvaqibP9",
+        "name": "Old Bridge, Mostar",
         "button": "View Destination"
     },
     {
-        "img": "../assets/images/sarajevo.jpg",
-        "alt": "Sarajevo",
-        "name": "Sarajevo",
+        "img": "../assets/images/vrelobune.jpg",
+        "alt": "Vrelo Bune, Blagaj",
+        "link": "https://goo.gl/maps/Doz2jSe1NKiHUfhJA",
+        "name": "Vrelo Bune, Blagaj",
         "button": "View Destination"
     },
     {
-        "img": "../assets/images/sarajevo.jpg",
-        "alt": "Sarajevo",
-        "name": "Sarajevo",
+        "img": "../assets/images/vodopad.jpg",
+        "alt": "Pliva Waterfall, Jajce",
+        "link": "https://goo.gl/maps/a4ASPiAw27bsq3rGA",
+        "name": "Pliva Waterfall, Jajce",
         "button": "View Destination"
     }
 ]

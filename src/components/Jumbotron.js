@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "./Button"
-import Video from "../assets/videos/travelexamplevideo.mp4"
+import Video from "../assets/videos/bosniatravel.mp4"
 
 const Jumbotron = () => {
   return (

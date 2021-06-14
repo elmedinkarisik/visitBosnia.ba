@@ -13,6 +13,7 @@ const Trips = ({ heading }) => {
           node {
             alt
             button
+            link
             name
             img {
               childImageSharp {
@@ -42,7 +43,8 @@ const Trips = ({ heading }) => {
               <ProductTitle>{item.node.name}</ProductTitle>
             </TextWrap>
             <Button
-              to="/trips"
+              href={item.node.link}
+              // to="/trips"
               primary="true"
               round="true"
               css={`
