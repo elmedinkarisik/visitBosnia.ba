@@ -8,11 +8,11 @@ const Footer = () => {
       <FooterLinksWrapper>
         <FooterDesc>
           <h1>visitBosnia</h1>
-          <p>Visit the best places in Bosnia.</p>
+          <p>Visit the best places in Bosnia and Herzegovina!</p>
         </FooterDesc>
         <FooterLinkItems>
           <FooterLinkTitle>Contact Us</FooterLinkTitle>
-          <FooterLink to="/about">Contact</FooterLink>
+          <FooterLink to="/">Contact</FooterLink>
           <FooterLink to="/">Support</FooterLink>
           <FooterLink to="/">Destinations</FooterLink>
           <FooterLink to="/">Sponsorships</FooterLink>
@@ -28,10 +28,10 @@ const Footer = () => {
         </FooterLinkItems>
         <FooterLinkItems>
           <FooterLinkTitle>Social Media</FooterLinkTitle>
-          <FooterLink to="/">Instagram</FooterLink>
-          <FooterLink to="/">Facebook</FooterLink>
-          <FooterLink to="/">Youtube</FooterLink>
-          <FooterLink to="/">Twitter</FooterLink>
+          <FooterLink href="https://instagram.com">Instagram</FooterLink>
+          <FooterLink href="https://facebook.com">Facebook</FooterLink>
+          <FooterLink href="https://youtube.com">Youtube</FooterLink>
+          <FooterLink href="https://twitter.com">Twitter</FooterLink>
         </FooterLinkItems>
       </FooterLinksWrapper>
     </FooterContainer>

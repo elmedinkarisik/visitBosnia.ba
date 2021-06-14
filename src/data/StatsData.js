@@ -12,8 +12,9 @@ export const StatsData = [
         `}
       />
     ),
-    title: "Title1",
-    desc: "Desc1",
+    title: "40.000+ Satisfied Clients",
+    desc:
+      "We have served over 40.000 happy clients since the founding of our company 2 years ago.",
   },
   {
     icon: (
@@ -23,8 +24,9 @@ export const StatsData = [
         `}
       />
     ),
-    title: "Title2",
-    desc: "Desc2",
+    title: "Deals With 7 Airline Companies",
+    desc:
+      "We have deals and partnerships with 7 of the biggest airline companies in order to ensure the best deals for YOU!",
   },
   {
     icon: (
@@ -34,8 +36,9 @@ export const StatsData = [
         `}
       />
     ),
-    title: "Title3",
-    desc: "Desc3",
+    title: "Ultra Fast Support",
+    desc:
+      "Our support team is accessible 24/7 for everybody. (And we don't use robots 😉)",
   },
   {
     icon: (
@@ -45,7 +48,8 @@ export const StatsData = [
         `}
       />
     ),
-    title: "Title4",
-    desc: "Desc4",
+    title: "Best Prices And Highest Security",
+    desc:
+      "We will create the best deals for YOU and make sure that your money is safe with us!",
   },
 ]
